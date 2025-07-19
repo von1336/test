@@ -1,0 +1,13 @@
+list disk
+select disk 0
+clean
+create partition primary size=100
+select disk 1
+clean
+create partition primary size=100
+list disk
+select disk 0
+online disk
+select disk 1
+online disk
+list disk 
